@@ -1,9 +1,9 @@
 import { useState } from "react";
+import "./reset.scss";
 import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  // const [count, setCount] = useState(0);
   return (
     <div className="container">
       <header className="header">
@@ -13,39 +13,65 @@ function App() {
           <button className="btn">가락시장 수산</button>
         </div>
       </header>
+      <div className="문구">
+        <h1>
+          회 먹기
+          <br />
+          가장 좋은
+          <br />
+          날을 찾아서
+        </h1>
+      </div>
+
       <section className="main">
         <div className="weather-card">
-          <div className="location">서울, 대한민국</div>
-          <div className="temperature">45°C</div>
+          <div className="location">
+            <h3>서울, 대한민국</h3>
+            <p>2024. 09. 06.</p>
+          </div>
+          <div className="temperature">
+            <span>45</span>°C
+          </div>
           <div className="weather-details">
             <p>17° / 45°</p>
-            <p>매운탕이 될 수 있는 날씨</p>
           </div>
           <div className="extra-info">
-            <div className="info">23:00 Slight chance of rain</div>
-            <div className="info">14 km/h Gentle breeze</div>
-            <div className="info">UV12 Low sunburn risk</div>
+            <div className="info">
+              <p>메에에에</p>
+              <p>메에에에</p>
+              <p>메에에에</p>
+            </div>
+            <div className="info">
+              <p>메에에에</p>
+              <p>메에에에</p>
+              <p>메에에에</p>
+            </div>
+            <div className="info">
+              <p>메에에에</p>
+              <p>메에에에</p>
+              <p>메에에에</p>
+            </div>
+            <div className="info">
+              <p>메에에에</p>
+              <p>메에에에</p>
+              <p>메에에에</p>
+            </div>
           </div>
         </div>
       </section>
-      <section className="hourly-forecast">
-        <div className="forecast-item">
-          <p>05:00 AM</p>
-          <p>23°</p>
+      <footer className="footer">
+        <div className="footer-content">
+          <p>워쩌고저쩌고</p>
+          <p>워쩌고저쩌고</p>
         </div>
-        <div className="forecast-item">
-          <p>06:00 AM</p>
-          <p>20°</p>
+        <div className="footer-content">
+          <p>2024</p>
         </div>
-        <div className="forecast-item">
-          <p>07:00 AM</p>
-          <p>17°</p>
+        <div className="footer-content">
+          <p>워쩌고저쩌고</p>
+          <p>워쩌고저쩌고</p>
         </div>
-        <div className="forecast-item">
-          <p>08:00 AM</p>
-          <p>16°</p>
-        </div>
-      </section>
+      </footer>
     </div>
   );
 }
