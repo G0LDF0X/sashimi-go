@@ -5,73 +5,73 @@ import "./App.scss";
 function App() {
   // const [count, setCount] = useState(0);
   return (
-    <div className="container">
-      <header className="header">
-        <div className="logo">회사가야지</div>
-        <div className="menu">
-          <button className="btn">노량진 수산</button>
-          <button className="btn">가락시장 수산</button>
+    <div class="container">
+      <div class="weather-side">
+        <div class="weather-gradient"></div>
+        <div class="date-container">
+          <h2 class="date-dayname">Tuesday</h2>
+          <span class="date-day">15 Jan 2019</span>
+          <i class="location-icon" data-feather="map-pin"></i>
+          <span class="location">Paris, FR</span>
         </div>
-      </header>
-      <div className="문구">
-        <h1>
-          회 먹기
-          <br />
-          가장 좋은
-          <br />
-          날을 찾아서
-        </h1>
+        <div class="weather-container">
+          <i class="weather-icon" data-feather="sun"></i>
+          <h1 class="weather-temp">29°C</h1>
+          <h3 class="weather-desc">Sunny</h3>
+        </div>
       </div>
-
-      <section className="main">
-        <div className="weather-card">
-          <div className="location">
-            <h3>서울, 대한민국</h3>
-            <p>2024. 09. 06.</p>
-          </div>
-          <div className="temperature">
-            <span>45</span>°C
-          </div>
-          <div className="weather-details">
-            <p>17° / 45°</p>
-          </div>
-          <div className="extra-info">
-            <div className="info">
-              <p>메에에에</p>
-              <p>메에에에</p>
-              <p>메에에에</p>
+      <div class="info-side">
+        <div class="today-info-container">
+          <div class="today-info">
+            <div class="precipitation">
+              <span class="title">PRECIPITATION</span>
+              <span class="value">0 %</span>
+              <div class="clear"></div>
             </div>
-            <div className="info">
-              <p>메에에에</p>
-              <p>메에에에</p>
-              <p>메에에에</p>
+            <div class="humidity">
+              <span class="title">HUMIDITY</span>
+              <span class="value">34 %</span>
+              <div class="clear"></div>
             </div>
-            <div className="info">
-              <p>메에에에</p>
-              <p>메에에에</p>
-              <p>메에에에</p>
-            </div>
-            <div className="info">
-              <p>메에에에</p>
-              <p>메에에에</p>
-              <p>메에에에</p>
+            <div class="wind">
+              <span class="title">WIND</span>
+              <span class="value">0 km/h</span>
+              <div class="clear"></div>
             </div>
           </div>
         </div>
-      </section>
-      <footer className="footer">
-        <div className="footer-content">
-          <p>워쩌고저쩌고</p>
-          <p>워쩌고저쩌고</p>
+        <div class="week-container">
+          <ul class="week-list">
+            <li class="active">
+              <i class="day-icon" data-feather="sun"></i>
+              <span class="day-name">Tue</span>
+              <span class="day-temp">29°C</span>
+            </li>
+            <li>
+              <i class="day-icon" data-feather="cloud"></i>
+              <span class="day-name">Wed</span>
+              <span class="day-temp">21°C</span>
+            </li>
+            <li>
+              <i class="day-icon" data-feather="cloud-snow"></i>
+              <span class="day-name">Thu</span>
+              <span class="day-temp">08°C</span>
+            </li>
+            <li>
+              <i class="day-icon" data-feather="cloud-rain"></i>
+              <span class="day-name">Fry</span>
+              <span class="day-temp">19°C</span>
+            </li>
+            <div class="clear"></div>
+          </ul>
         </div>
-        <div className="footer-content">
-          <p>2024</p>
+        <div class="location-container">
+          <button class="location-button">
+            <i data-feather="map-pin"></i>
+            <span>Change location</span>
+          </button>
         </div>
-        <div className="footer-content">
-          <p>워쩌고저쩌고</p>
-          <p>워쩌고저쩌고</p>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }
